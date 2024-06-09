@@ -15,6 +15,9 @@ namespace Arch\Core\Router\Http;
 
 use Arch\Core\Router\Server\Sessions;
 use Arch\Core\Router\Server\Cookies;
+use Arch\Core\Libs\EngineView\Engine;
+use Arch\Core\Libs\EngineView\Components\FlashMessages;
+
 
 class Response {
    protected $body;
@@ -34,41 +37,31 @@ class Response {
       $this->session = new Sessions();
    }
 
-   public function headers(string $key = "", string $value = "") {
-      if (empty($key)) {
-         return $this->headers;
-      }
-      if (empty($value)) {
-         return $this->headers[$key];
-      }
+   public function headers(string $key = "", string $value = ""): self {
       $this->headers[$key] = $value;
       return $this;
    }
 
-   public function removeHeader(string $key) {
+   public function removeHeader(string $key): self {
       if (isset($this->headers[$key])) {
          unset($this->headers[$key]);
       }
       return $this;
    }
 
-   public function status(int $code = 200) {
-      if (empty($code)) {
-         return $this->status;
-      }
-      $this->status = $code;
+   public function status(int $code = 200): self {
+
+      $this->status = (int) $code;
       return $this;
    }
 
-   public function contentType(string $type = "") {
-      if (empty($type)) {
-         return $this->headers['Content-Type'];
-      }
+   // set default content type text/plain; charset=UTF-8'
+   public function contentType(string $type = 'text/plain; charset=UTF-8'): self {
       $this->headers['Content-Type'] = $type;
       return $this;
    }
 
-   public function body(string $body = "") {
+   public function body(string $body = ""): self {
       if (!is_null($body)) {
          $this->body = $body;
          $this->headers['Content-Length'] = strlen($body);
@@ -76,7 +69,7 @@ class Response {
       return $this;
    }
 
-   public function html(string $body = "") {
+   public function html(string $body = ""): self {
       $this->contentType('text/html; charset=utf-8');
       $this->body($body);
       return $this;
@@ -90,7 +83,7 @@ class Response {
       return $this;
    }
 
-   public function text(string $body = "") {
+   public function text(string $body = ""): self {
       if (is_string($body)) {
          $this->contentType('text/plain; charset=utf-8');
          $this->body($body);
@@ -98,7 +91,7 @@ class Response {
       return $this;
    }
 
-   public function xml(string $body = "") {
+   public function xml(string $body = ""): self {
       if (is_string($body)) {
          $this->contentType('text/xml; charset=utf-8');
          $this->body($body);
@@ -106,7 +99,7 @@ class Response {
       return $this;
    }
 
-   public function download(string $file, string $name = "") {
+   public function download(string $file, string $name = ""): self {
       if (is_null($name) || empty($name)) {
          $name = basename($file);
       }
@@ -117,7 +110,7 @@ class Response {
       return $this;
    }
 
-   public function redirect(string $url) {
+   public function redirect(string $url): self {
       // evalua si la cadena $url continene http o https
       if (!preg_match('/^http(s)?:\/\//', $url)) {
          $url = APP_URL . ltrim($url, '/');
@@ -141,7 +134,7 @@ class Response {
       return $this;
    }
 
-   public function back() {
+   public function back(): self {
       if (isset($_SERVER['HTTP_REFERER'])) {
          $this->redirect($_SERVER['HTTP_REFERER']);
       } else {
@@ -150,50 +143,40 @@ class Response {
       return $this;
    }
 
-   // public function render(string $viewFile, array $params = [], string $layoutTemplate = "default"): self {
-   //    $view = new Views();
-   //    $this->html($view->render($viewFile, $params, $layoutTemplate));
-   //    return $this;
-   // }
+   public function flash(string $type = "success", string $message = "", string $title = ""): self {
+      $flash = new FlashMessages();
+      $flash->addMessage($message, $type, $type, $title);
+      return $this;
+   }
 
-   // public function flash(string $type = "success", string $message = "", string $title = "") {
-   //    FlashAlert::add($type, $message, $title);
-   //    return $this;
-   // }
+   public function render(string $viewFile, array $params = [], string $layoutTemplate = "default"): self {
+      $view = new Engine($viewFile, $params, $layoutTemplate);
+      $this->html($view->render());
+      return $this;
+   }
 
-   // public function flash(string $type = "success", string $message = "", string $title = ""): self {
-   //    AlertFlash::addAlert($type, $title, $message);
-   //    return $this;
-   // }
-
-   public function debug($data) {
+   public function debug($data): self {
       \Kint\Kint::dump($data);
       return $this;
    }
 
-   public function cookie(string $key = "", string $value = "", int $time = 0, string $path = "/", string $domain = "",
-      bool $secure = false, bool $httponly = false) {
-      if (empty($key)) {
-         return $this->cookie;
-      }
-      if (empty($value)) {
-         return $this->cookie->get($key);
-      }
+   public function cookie(
+      string $key = "",
+      string $value = "",
+      int $time = 0,
+      string $path = "/",
+      string $domain = "",
+      bool $secure = false,
+      bool $httponly = false): self {
       $this->cookie->set($key, $value, $time, $path, $domain, $secure, $httponly);
       return $this;
    }
 
-   public function session(string $key = "", mixed $value = "", int $time = 0) {
-      if (empty($key)) {
-         return $this->session;
-      }
-      if (empty($value)) {
-         return $this->session->get($key);
-      }
+   public function session(string $key = "", mixed $value = "", int $time = 0): self {
       $this->session->set($key, $value);
       return $this;
    }
-   private function build() {
+   private function build(): self {
       if (is_null($this->body)) {
          $this->removeHeader('Content-Length');
          $this->removeHeader('Content-Type');

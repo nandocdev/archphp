@@ -15,8 +15,19 @@ namespace Arch\App\Modules\Main;
 
 class HomeController {
    public function index($req, $res) {
-      echo "<pre>";
-      print_r($req);
-      echo "</pre>";
+      $res->render('home/index', []);
    }
+
+   public function caracteristicas($req, $res) {
+      $res->render('caracteristicas/index', []);
+   }
+
+   public function documentacion($req, $res) {
+      $res->render('documentacion/index', []);
+   }
+
+   public function contacto($req, $res) {
+      $res->render('contacto/index', []);
+   }
+
 }

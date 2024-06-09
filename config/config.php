@@ -61,7 +61,7 @@ define('APP_PUBLIC', APP_URL . 'public/');
 define('APP_ROOT', dirname(__DIR__, 1) . DS);
 define('ARCH_CORE', APP_ROOT . 'core' . DS);
 define('ARCH_TMP', APP_ROOT . 'tmp' . DS);
-define('ARCH_APP', APP_ROOT . 'apps' . DS);
+define('ARCH_APP', APP_ROOT . 'app' . DS);
 define('ARCH_APP_MODELS', ARCH_APP . 'Models' . DS);
 define('ARCH_APP_MODULES', ARCH_APP . 'Modules' . DS);
 define('ARCH_APP_SERVICES', ARCH_APP . 'Services' . DS);
