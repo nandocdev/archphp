@@ -17,9 +17,10 @@ require_once $kernel;
 Arch\Core\App\Kernel::init();
 $container = Arch\Core\App\Kernel::container();
 
-\Kint::dump($container);
+// \Kint::dump($container);
 
 set_error_handler('Arch\Core\Handler\Exceptions::errorHandler');
 set_exception_handler('Arch\Core\Handler\Exceptions::exceptionHandler');
 
-$router = $container->get('router');
+$router = new \Arch\Core\Router\Router();
+$router->run();

@@ -1,0 +1,80 @@
+[2024-06-08T15:50:10.380788-05:00] Bundle.WARNING: No entry or class found for 'router' [] {"uid":"f5a9144"}
+[2024-06-08T15:50:10.474632-05:00] Bundle.WARNING: No entry or class found for 'router' [] {"uid":"d2dba63"}
+[2024-06-08T15:51:06.310300-05:00] Bundle.WARNING: No entry or class found for 'Router' [] {"uid":"e85f2ed"}
+[2024-06-08T15:51:06.405695-05:00] Bundle.WARNING: No entry or class found for 'Router' [] {"uid":"8d38c3a"}
+[2024-06-08T15:51:07.186218-05:00] Bundle.WARNING: No entry or class found for 'Router' [] {"uid":"3edac13"}
+[2024-06-08T15:51:07.264566-05:00] Bundle.WARNING: No entry or class found for 'Router' [] {"uid":"78bde1e"}
+[2024-06-08T15:53:00.694959-05:00] Bundle.WARNING: No entry or class found for 'Router' [] {"uid":"c275931"}
+[2024-06-08T15:53:00.809663-05:00] Bundle.WARNING: No entry or class found for 'Router' [] {"uid":"e9653fc"}
+[2024-06-08T15:53:33.261101-05:00] Bundle.WARNING: No entry or class found for 'Router' [] {"uid":"5ed122b"}
+[2024-06-08T15:53:33.372353-05:00] Bundle.WARNING: No entry or class found for 'Router' [] {"uid":"cfc7829"}
+[2024-06-08T15:55:10.119813-05:00] Bundle.WARNING: Call to undefined method Arch\Core\Router\Route::call() [] {"uid":"a83b4af"}
+[2024-06-08T15:55:10.221003-05:00] Bundle.WARNING: Call to undefined method Arch\Core\Router\Route::call() [] {"uid":"e3300d7"}
+[2024-06-08T16:06:06.919822-05:00] Bundle.WARNING: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "IndexController@index" not found or invalid function name [] {"uid":"cc3e471"}
+[2024-06-08T16:06:07.090051-05:00] Bundle.WARNING: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "IndexController@index" not found or invalid function name [] {"uid":"c67fe84"}
+[2024-06-08T16:06:42.571133-05:00] Bundle.WARNING: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "IndexController@index" not found or invalid function name [] {"uid":"997b1a6"}
+[2024-06-08T16:06:42.632666-05:00] Bundle.WARNING: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "IndexController@index" not found or invalid function name [] {"uid":"ff53763"}
+[2024-06-08T16:07:20.914828-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"3ac3698"}
+[2024-06-08T16:07:21.019087-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"3b15388"}
+[2024-06-08T16:08:26.391673-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"7eca8a5"}
+[2024-06-08T16:08:26.455523-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"5dfe3d4"}
+[2024-06-08T16:08:27.277750-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"ffadd20"}
+[2024-06-08T16:08:27.340438-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"1bd9781"}
+[2024-06-08T16:08:27.436215-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"6381384"}
+[2024-06-08T16:08:27.482584-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"8728d75"}
+[2024-06-08T16:08:27.641734-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"ff9a237"}
+[2024-06-08T16:08:27.711542-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"9559780"}
+[2024-06-08T16:09:56.788585-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"bf8a340"}
+[2024-06-08T16:09:56.873660-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"1723601"}
+[2024-06-08T16:09:57.423036-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"fef068a"}
+[2024-06-08T16:09:57.490389-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"c2d23c5"}
+[2024-06-08T16:09:57.681641-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"813ab22"}
+[2024-06-08T16:09:57.805666-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"b38def4"}
+[2024-06-08T16:09:57.987673-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"71779a4"}
+[2024-06-08T16:09:58.031749-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"dae1b76"}
+[2024-06-08T16:09:58.175778-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"d309207"}
+[2024-06-08T16:09:58.247078-05:00] Bundle.WARNING: Arch\Core\Router\Router::get(): Argument #2 ($controller) must be of type string, array given, called in /srv/dev/www/Routes.php on line 16 [] {"uid":"9f240bd"}
+[2024-06-08T16:11:56.185512-05:00] Bundle.WARNING: Cannot assign array to property Arch\Core\Router\Route::$function of type string [] {"uid":"cd02c36"}
+[2024-06-08T16:11:56.299514-05:00] Bundle.WARNING: Cannot assign array to property Arch\Core\Router\Route::$function of type string [] {"uid":"40634d7"}
+[2024-06-08T16:12:55.918674-05:00] Bundle.WARNING: Arch\Core\Router\Router::submit(): Return value must be of type array, null returned [] {"uid":"95caf68"}
+[2024-06-08T16:12:55.983321-05:00] Bundle.WARNING: Arch\Core\Router\Router::submit(): Return value must be of type array, null returned [] {"uid":"9c63fcd"}
+[2024-06-08T16:12:56.609218-05:00] Bundle.WARNING: Arch\Core\Router\Router::submit(): Return value must be of type array, null returned [] {"uid":"2772993"}
+[2024-06-08T16:12:56.680497-05:00] Bundle.WARNING: Arch\Core\Router\Router::submit(): Return value must be of type array, null returned [] {"uid":"ffca9c7"}
+[2024-06-08T16:12:56.824440-05:00] Bundle.WARNING: Arch\Core\Router\Router::submit(): Return value must be of type array, null returned [] {"uid":"9b6d5b0"}
+[2024-06-08T16:12:56.868738-05:00] Bundle.WARNING: Arch\Core\Router\Router::submit(): Return value must be of type array, null returned [] {"uid":"a387c7d"}
+[2024-06-08T16:12:57.074830-05:00] Bundle.WARNING: Arch\Core\Router\Router::submit(): Return value must be of type array, null returned [] {"uid":"f15c5e4"}
+[2024-06-08T16:12:57.134357-05:00] Bundle.WARNING: Arch\Core\Router\Router::submit(): Return value must be of type array, null returned [] {"uid":"bd291ef"}
+[2024-06-08T16:13:48.482212-05:00] Bundle.WARNING: Arch\Core\Router\Router::submit(): Return value must be of type array, null returned [] {"uid":"4800795"}
+[2024-06-08T16:13:48.551918-05:00] Bundle.WARNING: Arch\Core\Router\Router::submit(): Return value must be of type array, null returned [] {"uid":"b61b8f1"}
+[2024-06-08T16:13:49.274488-05:00] Bundle.WARNING: Arch\Core\Router\Router::submit(): Return value must be of type array, null returned [] {"uid":"af6abc2"}
+[2024-06-08T16:13:49.338683-05:00] Bundle.WARNING: Arch\Core\Router\Router::submit(): Return value must be of type array, null returned [] {"uid":"ca923d4"}
+[2024-06-08T16:13:49.481535-05:00] Bundle.WARNING: Arch\Core\Router\Router::submit(): Return value must be of type array, null returned [] {"uid":"020b1cd"}
+[2024-06-08T16:13:49.542811-05:00] Bundle.WARNING: Arch\Core\Router\Router::submit(): Return value must be of type array, null returned [] {"uid":"225cd0f"}
+[2024-06-08T16:14:12.263487-05:00] Bundle.WARNING: Call to undefined method Arch\App\Modules\Home\HomeController::setRequest() [] {"uid":"3fbeb8f"}
+[2024-06-08T16:14:12.322829-05:00] Bundle.WARNING: Call to undefined method Arch\App\Modules\Home\HomeController::setRequest() [] {"uid":"5e74242"}
+[2024-06-08T16:15:03.579406-05:00] Bundle.WARNING: Call to undefined method Arch\App\Modules\Home\HomeController::setRequest() [] {"uid":"9cc4e01"}
+[2024-06-08T16:15:03.655585-05:00] Bundle.WARNING: Call to undefined method Arch\App\Modules\Home\HomeController::setRequest() [] {"uid":"f076469"}
+[2024-06-08T16:15:04.100172-05:00] Bundle.WARNING: Call to undefined method Arch\App\Modules\Home\HomeController::setRequest() [] {"uid":"bb6001e"}
+[2024-06-08T16:15:04.223360-05:00] Bundle.WARNING: Call to undefined method Arch\App\Modules\Home\HomeController::setRequest() [] {"uid":"29730c6"}
+[2024-06-08T16:15:04.274300-05:00] Bundle.WARNING: Call to undefined method Arch\App\Modules\Home\HomeController::setRequest() [] {"uid":"4818e7e"}
+[2024-06-08T16:15:04.331400-05:00] Bundle.WARNING: Call to undefined method Arch\App\Modules\Home\HomeController::setRequest() [] {"uid":"8dfc97c"}
+[2024-06-08T16:15:38.657233-05:00] Bundle.WARNING: Call to undefined method Arch\App\Modules\Home\HomeController::setRequest() [] {"uid":"b30e52b"}
+[2024-06-08T16:15:38.788116-05:00] Bundle.WARNING: Call to undefined method Arch\App\Modules\Home\HomeController::setRequest() [] {"uid":"66546eb"}
+[2024-06-08T16:15:39.297956-05:00] Bundle.WARNING: Call to undefined method Arch\App\Modules\Home\HomeController::setRequest() [] {"uid":"fe21caa"}
+[2024-06-08T16:15:39.355642-05:00] Bundle.WARNING: Call to undefined method Arch\App\Modules\Home\HomeController::setRequest() [] {"uid":"f748c70"}
+[2024-06-08T16:15:39.433659-05:00] Bundle.WARNING: Call to undefined method Arch\App\Modules\Home\HomeController::setRequest() [] {"uid":"0cca696"}
+[2024-06-08T16:15:39.552339-05:00] Bundle.WARNING: Call to undefined method Arch\App\Modules\Home\HomeController::setRequest() [] {"uid":"bb971ed"}
+[2024-06-08T16:16:47.647442-05:00] Bundle.WARNING: Typed property Arch\Core\Router\Route::$response must not be accessed before initialization [] {"uid":"0b01b45"}
+[2024-06-08T16:16:47.715257-05:00] Bundle.WARNING: Typed property Arch\Core\Router\Route::$response must not be accessed before initialization [] {"uid":"166802b"}
+[2024-06-08T16:16:48.240677-05:00] Bundle.WARNING: Typed property Arch\Core\Router\Route::$response must not be accessed before initialization [] {"uid":"497d7f1"}
+[2024-06-08T16:16:48.320348-05:00] Bundle.WARNING: Typed property Arch\Core\Router\Route::$response must not be accessed before initialization [] {"uid":"07cabb5"}
+[2024-06-08T16:16:48.430371-05:00] Bundle.WARNING: Typed property Arch\Core\Router\Route::$response must not be accessed before initialization [] {"uid":"20b1a1e"}
+[2024-06-08T16:16:48.489320-05:00] Bundle.WARNING: Typed property Arch\Core\Router\Route::$response must not be accessed before initialization [] {"uid":"74948fe"}
+[2024-06-08T16:21:05.449699-05:00] Bundle.WARNING: Too few arguments to function Arch\App\Modules\Home\HomeController::index(), 1 passed and exactly 2 expected [] {"uid":"541a4a7"}
+[2024-06-08T16:21:05.521004-05:00] Bundle.WARNING: Too few arguments to function Arch\App\Modules\Home\HomeController::index(), 1 passed and exactly 2 expected [] {"uid":"e4b36f9"}
+[2024-06-08T16:21:17.678664-05:00] Bundle.WARNING: Too few arguments to function Arch\App\Modules\Home\HomeController::index(), 0 passed and exactly 2 expected [] {"uid":"e13f3ac"}
+[2024-06-08T16:21:17.738583-05:00] Bundle.WARNING: Too few arguments to function Arch\App\Modules\Home\HomeController::index(), 0 passed and exactly 2 expected [] {"uid":"2150aa9"}
+[2024-06-08T16:21:18.273987-05:00] Bundle.WARNING: Too few arguments to function Arch\App\Modules\Home\HomeController::index(), 0 passed and exactly 2 expected [] {"uid":"f965bcc"}
+[2024-06-08T16:21:18.345264-05:00] Bundle.WARNING: Too few arguments to function Arch\App\Modules\Home\HomeController::index(), 0 passed and exactly 2 expected [] {"uid":"aa4fc9e"}
+[2024-06-08T16:21:18.429007-05:00] Bundle.WARNING: Too few arguments to function Arch\App\Modules\Home\HomeController::index(), 0 passed and exactly 2 expected [] {"uid":"f3ae129"}
+[2024-06-08T16:21:18.483085-05:00] Bundle.WARNING: Too few arguments to function Arch\App\Modules\Home\HomeController::index(), 0 passed and exactly 2 expected [] {"uid":"46d8dd4"}

@@ -105,7 +105,11 @@ class Exceptions {
       $data['title'] = $title;
       $data['message'] = $message . ' ' . $e->getMessage();
       $data['code'] = $code;
-      // print_r($data);
+
+      echo "<pre>";
+      print_r($data);
+      echo "</pre>";
+
       define('ERROR_HANDLER', true);
 
    }
