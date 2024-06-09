@@ -15,6 +15,8 @@ namespace Arch\App\Modules\Main;
 
 class HomeController {
    public function index($req, $res) {
-      echo "Hello World!";
+      echo "<pre>";
+      print_r($req);
+      echo "</pre>";
    }
 }

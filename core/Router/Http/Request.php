@@ -48,7 +48,7 @@ class Request {
          $config['user_agent'] = self::getVars('HTTP_USER_AGENT');
          $config['type'] = self::getVars('CONTENT_TYPE');
          $config['length'] = (int) self::getVars('CONTENT_LENGTH', '0');
-         $config['params'] = $_GET;
+         $config['params'] = self::setParams();
          $config['body'] = self::get_body();
          $config['files'] = $_FILES;
          $config['cookies'] = $_COOKIE;
@@ -115,6 +115,18 @@ class Request {
          $body = [];
       }
       return $body;
+   }
+
+   private static function setParams() {
+      // evalua la variable global GET, elimina todos los elemenetos que contengan como clave url
+      if (isset($_GET['url'])) {
+         unset($_GET['url']);
+      }
+      return $_GET;
+   }
+
+   public function addParams(array $params): void {
+      $this->params = array_merge($this->params, $params);
    }
 
    public static function getProxyIpAddress(): string {

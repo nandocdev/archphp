@@ -31,6 +31,9 @@ class Router {
 
    // obtiene la ruta del controlador y metodo
    private function setParams(): array {
+      if ($this->_route->params()) {
+         $this->_request->addParams($this->_route->params());
+      }
       (array) $params = [];
       $params['req'] = $this->_request;
       $params['res'] = $this->_response;
