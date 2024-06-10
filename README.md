@@ -1,6 +1,21 @@
-# ArchPHP - Framework MVC en PHP
 
-ArchPHP es un framework MVC (Modelo-Vista-Controlador) desarrollado en PHP que proporciona una estructura sólida y organizada para construir aplicaciones web robustas y escalables.
+<div align="center">
+
+  <h1>ArchPHP - Framework MVC en PHP</h1>
+  
+  <p>
+    ArchPHP es un framework MVC (Modelo-Vista-Controlador) desarrollado en PHP que proporciona una estructura sólida y organizada para construir aplicaciones web robustas y escalables.
+  </p>
+  
+  
+
+   
+<h4>
+    <a href="https://arch-php.000webhostapp.com/">View Demo</a>
+  </h4>
+</div>
+
+<br />
 
 ## Características principales
 

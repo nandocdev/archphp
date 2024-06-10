@@ -1,15 +1,15 @@
 <section class="container mt-5">
    <div class="row">
       <div class="col-12">
-         <h2>Documentación de ARCHPhp</h2>
-         <p>La documentación de ARCHPhp está diseñada para ayudarte a comprender y utilizar el framework de manera
+         <h2>Documentación de ArchPHP</h2>
+         <p>La documentación de ArchPHP está diseñada para ayudarte a comprender y utilizar el framework de manera
             efectiva. A continuación, se presentan las secciones principales de la documentación:</p>
       </div>
    </div>
    <div class="row mt-4">
       <div class="col-md-6">
          <h3>Guía de Inicio Rápido</h3>
-         <p>Aprende a instalar y configurar ARCHPhp en pocos minutos.</p>
+         <p>Aprende a instalar y configurar ArchPHP en pocos minutos.</p>
          <ul>
             <li><a href="#">Instalación</a></li>
             <li><a href="#">Configuración Inicial</a></li>
@@ -18,7 +18,7 @@
       </div>
       <div class="col-md-6">
          <h3>Conceptos Básicos</h3>
-         <p>Familiarízate con los conceptos fundamentales de ARCHPhp.</p>
+         <p>Familiarízate con los conceptos fundamentales de ArchPHP.</p>
          <ul>
             <li><a href="#">Arquitectura MVC</a></li>
             <li><a href="#">Ruteo</a></li>
@@ -56,7 +56,7 @@
       <div class="col-12">
          <h3>Referencia de API</h3>
          <p>Consulta la referencia completa de la API para obtener detalles sobre todas las clases y métodos disponibles
-            en ARCHPhp.</p>
+            en ArchPHP.</p>
          <ul>
             <li><a href="#">Controladores</a></li>
             <li><a href="#">Modelos</a></li>
@@ -66,3 +66,165 @@
       </div>
    </div>
 </section>
+
+<div class="container">
+   <h2 class="text-center mb-4">Guía de Inicio Rápido</h2>
+   <section id="installation">
+      <h3>Instalación</h3>
+      <p>Para instalar ArchPHP, sigue los siguientes pasos:</p>
+      <ol>
+         <li>Clona el repositorio de ArchPHP en tu sistema local.</li>
+         <li>Configura tu servidor web para que apunte al directorio público dentro del directorio de ArchPHP.</li>
+         <li>Copia el archivo <code>config/database.example.php</code> y renómbralo como <code>database.php</code>.
+            Configura los parámetros de conexión a tu base de datos en este archivo.</li>
+      </ol>
+   </section>
+
+   <section id="initial-configuration">
+      <h3>Configuración Inicial</h3>
+      <p>Antes de comenzar a trabajar con ArchPHP, necesitas realizar algunas configuraciones iniciales:</p>
+      <ol>
+         <li>Revisa el archivo <code>config/database.php</code> y asegúrate de que la configuración de la base de datos
+            sea correcta.</li>
+         <li>Verifica que las rutas de los directorios temporales y de almacenamiento en <code>config/config.php</code>
+            sean adecuadas para tu aplicación.</li>
+         <li>Si planeas utilizar el sistema de correo electrónico, configura los parámetros de correo en
+            <code>config/mail.php</code>.
+         </li>
+      </ol>
+   </section>
+
+   <section id="getting-started">
+      <h3>Primeros Pasos</h3>
+      <p>Una vez que has completado la instalación y la configuración inicial, estás listo para dar tus primeros pasos
+         con ArchPHP:</p>
+      <ol>
+         <li>Crea tu primer controlador y vista utilizando la estructura de módulos proporcionada.</li>
+         <li>Define tus rutas en el archivo <code>routes/web.php</code> para acceder a tus controladores y vistas.</li>
+         <li>Utiliza el ORM de ArchPHP para interactuar con tu base de datos de manera eficiente y segura.</li>
+      </ol>
+   </section>
+
+   <hr>
+   <h2 class="text-center mb-4">Conceptos Básicos</h2>
+   <section id="mvc-architecture">
+      <h4>Arquitectura MVC</h4>
+      <p>La arquitectura MVC (Modelo-Vista-Controlador) es un patrón de diseño ampliamente utilizado en el desarrollo de
+         aplicaciones web. En ArchPHP, este patrón se utiliza para separar la lógica de negocio, la presentación y el
+         control de la aplicación.</p>
+      <h5>Modelo (Model)</h5>
+      <p>Representa los datos y la lógica de negocio de la aplicación. En ArchPHP, los modelos interactúan con la base
+         de datos utilizando el ORM (Mapeador Objeto-Relacional) integrado.</p>
+      <h5>Vista (View)</h5>
+      <p>Es la interfaz de usuario que presenta los datos al usuario final. En ArchPHP, las vistas son archivos de
+         plantilla que se renderizan con datos proporcionados por los controladores.</p>
+      <h5>Controlador (Controller)</h5>
+      <p>Actúa como intermediario entre el modelo y la vista, maneja las solicitudes del usuario y coordina la lógica de
+         la aplicación. En ArchPHP, los controladores son responsables de manejar las solicitudes HTTP y llamar a los
+         modelos y vistas correspondientes.</p>
+   </section>
+
+   <section id="routing">
+      <h4>Ruteo</h4>
+      <p>El ruteo en ArchPHP se refiere al proceso de definir cómo se deben manejar las solicitudes HTTP entrantes. Esto
+         se logra utilizando el archivo <code>routes/web.php</code>, donde se definen las rutas y se especifica qué
+         controlador y método deben manejar cada solicitud.</p>
+   </section>
+
+   <section id="controllers">
+      <h4>Controladores</h4>
+      <p>Los controladores en ArchPHP son clases que manejan las solicitudes HTTP y coordinan la lógica de la
+         aplicación. Cada controlador está asociado con una o más rutas y se encarga de llamar a los modelos
+         correspondientes para acceder a los datos y a las vistas para renderizar la respuesta.</p>
+   </section>
+
+   <section id="views">
+      <h4>Vistas</h4>
+      <p>Las vistas en ArchPHP son archivos de plantilla que definen la interfaz de usuario de la aplicación. Utilizan
+         un motor de plantillas para mezclar datos dinámicos con HTML estático y presentar la información al usuario
+         final.</p>
+   </section>
+
+   <section id="models">
+      <h4>Modelos</h4>
+      <p>Los modelos en ArchPHP representan los datos y la lógica de negocio de la aplicación. Cada modelo está asociado
+         con una tabla en la base de datos y proporciona métodos para interactuar con los datos, como insertar,
+         actualizar, eliminar y recuperar registros.</p>
+   </section>
+   <hr>
+   <h2 class="text-center mb-4">Guías Avanzadas</h2>
+   <section id="session-management">
+      <h4>Manejo de Sesiones</h4>
+      <p>El manejo de sesiones en ArchPHP permite controlar la autenticación y la persistencia de datos del usuario
+         entre múltiples solicitudes HTTP.</p>
+   </section>
+
+   <section id="authentication-authorization">
+      <h4>Autenticación y Autorización</h4>
+      <p>La autenticación y autorización en ArchPHP te permite proteger tus rutas y recursos, asegurando que solo
+         usuarios autenticados y autorizados puedan acceder a ellos.</p>
+   </section>
+
+   <section id="security">
+      <h4>Seguridad</h4>
+      <p>La seguridad es una preocupación importante en cualquier aplicación web. En ArchPHP, se proporcionan
+         configuraciones y prácticas recomendadas para proteger tu aplicación contra vulnerabilidades comunes.</p>
+   </section>
+
+   <section id="performance-optimization">
+      <h4>Optimización de Desempeño</h4>
+      <p>La optimización de desempeño en ArchPHP te ayuda a mejorar la velocidad y la eficiencia de tu aplicación, lo
+         que resulta en una mejor experiencia para el usuario final.</p>
+   </section>
+
+   <section id="middleware-usage">
+      <h4>Uso de Middleware</h4>
+      <p>Los middleware en ArchPHP son capas intermedias que se ejecutan antes o después de que se maneje una solicitud
+         HTTP. Esto te permite agregar funcionalidades adicionales a tus aplicaciones de manera modular y reutilizable.
+      </p>
+   </section>
+
+   <hr>
+   <h2 class="text-center mb-4">Recetas y Ejemplos</h2>
+   <section id="database-connection">
+      <h4>Conexión a Bases de Datos</h4>
+      <p>Aprende a conectar tu aplicación ArchPHP a diferentes bases de datos, como MySQL, PostgreSQL, SQLite, etc.,
+         utilizando el gestor de base de datos PDO.</p>
+   </section>
+
+   <section id="email-sending">
+      <h4>Envío de Correos Electrónicos</h4>
+      <p>Descubre cómo configurar y enviar correos electrónicos desde tu aplicación ArchPHP utilizando el protocolo
+         SMTP.</p>
+   </section>
+
+   <section id="file-uploading">
+      <h4>Subida de Archivos</h4>
+      <p>Aprende a permitir que los usuarios suban archivos a tu aplicación ArchPHP y cómo manejar y almacenar estos
+         archivos de manera segura.</p>
+   </section>
+
+   <section id="pdf-generation">
+      <h4>Generación de PDF</h4>
+      <p>Explora cómo generar archivos PDF dinámicos desde tu aplicación ArchPHP utilizando bibliotecas y herramientas
+         populares.</p>
+   </section>
+
+   <section id="external-api-integration">
+      <h4>Integración con APIs Externas</h4>
+      <p>Aprende a integrar servicios y APIs externas en tu aplicación ArchPHP para ampliar su funcionalidad y acceder a
+         datos y servicios de terceros.</p>
+   </section>
+   Este código HTML proporciona una descripción general de las recetas y ejemplos disponibles en ArchPHP, así como
+   enlaces a cada sección correspondiente. Cada sección contiene información detallada y ejemplos sobre el tema
+   específico.
+
+
+
+
+
+
+
+
+   <!-- Secciones restantes -->
+</div>
