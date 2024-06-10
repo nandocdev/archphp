@@ -41,5 +41,4 @@ class FlashMessages {
    public function hasMessages(): bool {
       return !empty($this->messages);
    }
-
 }

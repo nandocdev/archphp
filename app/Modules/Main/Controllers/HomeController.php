@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace Arch\App\Modules\Main;
+namespace Arch\App\Modules\Main\Controllers;
 
 class HomeController {
    public function index($req, $res) {

@@ -1,0 +1,28 @@
+[2024-06-10T07:33:57.160182-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Main\Controllers\HomeController [] {"uid":"7bc7434"}
+[2024-06-10T07:33:57.431914-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Main\Controllers\HomeController [] {"uid":"6d57003"}
+[2024-06-10T07:33:57.524961-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"c9d1587"}
+[2024-06-10T07:34:32.139962-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Main\Controllers\HomeController [] {"uid":"4f173d1"}
+[2024-06-10T07:34:32.249915-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"bed1e6a"}
+[2024-06-10T07:34:32.899646-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Main\Controllers\HomeController [] {"uid":"dd19905"}
+[2024-06-10T07:34:32.936577-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"0f02661"}
+[2024-06-10T07:34:33.182492-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Main\Controllers\HomeController [] {"uid":"5596109"}
+[2024-06-10T07:34:33.240428-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"d823d21"}
+[2024-06-10T07:35:00.019966-05:00] Bundle.WARNING: El directorio de vistas no existe: /srv/dev/app/Modules/Main/Controllers/views/home/index.view.phtml [] {"uid":"75f2143"}
+[2024-06-10T07:35:00.069510-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"dd6aef2"}
+[2024-06-10T07:35:00.490568-05:00] Bundle.WARNING: El directorio de vistas no existe: /srv/dev/app/Modules/Main/Controllers/views/home/index.view.phtml [] {"uid":"3945de2"}
+[2024-06-10T07:35:00.534949-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"5355f1b"}
+[2024-06-10T07:35:00.684260-05:00] Bundle.WARNING: El directorio de vistas no existe: /srv/dev/app/Modules/Main/Controllers/views/home/index.view.phtml [] {"uid":"b6bbb28"}
+[2024-06-10T07:35:00.736837-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"ef03aec"}
+[2024-06-10T07:35:49.549318-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"39fd6e1"}
+[2024-06-10T07:35:52.004807-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"1d15a0d"}
+[2024-06-10T07:35:53.651988-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"a82c266"}
+[2024-06-10T07:35:54.796782-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"0201fc9"}
+[2024-06-10T07:35:55.811413-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"7f4ecfe"}
+[2024-06-10T07:35:57.333529-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"e04da88"}
+[2024-06-10T07:35:58.720894-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"f1da7d7"}
+[2024-06-10T07:35:59.501312-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"b7a543c"}
+[2024-06-10T07:36:00.458273-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"6ff5beb"}
+[2024-06-10T07:36:01.224887-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"df6308d"}
+[2024-06-10T07:36:02.467992-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"e042a2f"}
+[2024-06-10T07:36:04.039727-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"0230722"}
+[2024-06-10T07:36:05.380343-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"a5280d3"}

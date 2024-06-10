@@ -42,7 +42,7 @@ class Router {
 
    // obtiene el namespace del controlador
    private function getNamespace(): string {
-      $namespace = APP_BASE_NAMESPACE . $this->_route->module() . '\\' . $this->_route->controller() . 'Controller';
+      $namespace = APP_BASE_NAMESPACE . $this->_route->module() . '\\Controllers\\' . $this->_route->controller() . 'Controller';
       // evalua si el namespace es valido
       if (!class_exists($namespace)) {
          throw new \Exception("Namespace no encontrado: $namespace");

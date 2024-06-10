@@ -43,7 +43,7 @@ class Engine {
       if (defined('ERROR_HANDLER')) {
          $modules = 'Errors';
       }
-      $dir_view = ARCH_APP_MODULES . $modules . DS . 'views' . DS . $dir_view . '.view.phtml';
+      $dir_view = ARCH_APP_MODULES . $modules . DS . DS . 'Views' . DS . $dir_view . '.view.phtml';
       if (!file_exists($dir_view)) {
          throw new \Exception("El directorio de vistas no existe: $dir_view");
       }

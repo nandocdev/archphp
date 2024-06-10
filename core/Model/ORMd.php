@@ -51,11 +51,3 @@ class ORMd {
       return new Query($this->debug, $this->config);
    }
 }
-
-// implementation
-// $orm = new ORMd();
-// $orm->debug()->create()->execute('INSERT INTO table (field1, field2) VALUES (?, ?)', ['value1', 'value2']);
-// $orm->debug()->read()->execute('SELECT * FROM table WHERE field1 = ?', ['value1']);
-// $orm->debug()->update()->execute('UPDATE table SET field1 = ? WHERE field2 = ?', ['value1', 'value2']);
-// $orm->debug()->delete()->execute('DELETE FROM table WHERE field1 = ?', ['value1']);
-// $orm->debug()->query()->execute('SELECT * FROM table WHERE field1 = ?', ['value1']);
