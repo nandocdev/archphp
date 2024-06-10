@@ -32,8 +32,21 @@ git clone https://github.com/nandocdev/archphp.git
 2. Configura tu servidor web para que apunte al directorio `public` dentro del directorio de ArchPHP.
 
 3. Copia el archivo `config/database.example.php` y renómbralo como `database.php`. Configura los parámetros de conexión a tu base de datos en este archivo.
+   El archivo `database.php` en la carpeta `srv/dev/config` contiene la configuración de la base de datos para el entorno de desarrollo de la aplicación. Este archivo es crucial para establecer la conexión con la base de datos y definir sus parámetros clave.
 
-4. ¡Listo! Puedes empezar a desarrollar tu aplicación utilizando la estructura proporcionada por ArchPHP.
+- **Driver**: Especifica el controlador de la base de datos que se utilizará.
+- **Host**: Indica la dirección IP del servidor de la base de datos.
+- **Usuario y contraseña**: Son las credenciales necesarias para acceder a la base de datos.
+- **Nombre de la base de datos**: Es el nombre de la base de datos a la que se conectará la aplicación.
+- **Conjunto de caracteres**: Define el juego de caracteres que se utilizará para la comunicación con la base de datos.
+- **Puerto**: Especifica el puerto al que se conectará la aplicación para acceder a la base de datos.
+- **Prefijo de tabla**: Si se utiliza algún prefijo para las tablas de la base de datos, se puede definir aquí.
+- **Opciones de PDO**: Establece diferentes opciones para la conexión PDO, como el modo de error, la emulación de preparaciones y el modo de recuperación de datos.
+
+Esta configuración es esencial para garantizar que la aplicación pueda conectarse correctamente a la base de datos y realizar operaciones de manera segura y eficiente durante el desarrollo.
+
+
+1. ¡Listo! Puedes empezar a desarrollar tu aplicación utilizando la estructura proporcionada por ArchPHP.
 
 ## Estructura de carpetas
 - **Modules/**: Contiene los diferentes módulos de la aplicación, cada uno con su propia estructura de controladores, modelos, vistas y rutas.
