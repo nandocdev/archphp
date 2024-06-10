@@ -52,3 +52,7 @@
 [2024-06-10T08:47:13.797722-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"0f60f83"}
 [2024-06-10T08:47:14.808896-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"71942d4"}
 [2024-06-10T09:12:10.628369-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"1a9e1c2"}
+[2024-06-10T09:22:54.556456-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"9b86f4c"}
+[2024-06-10T09:22:55.106828-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"eb30271"}
+[2024-06-10T09:22:55.304198-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"450425f"}
+[2024-06-10T09:22:55.534223-05:00] Bundle.WARNING: Namespace no encontrado: Arch\App\Modules\Favicon.ico\Controllers\HomeController [] {"uid":"4070fea"}
