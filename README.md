@@ -11,7 +11,7 @@
 
    
 <h4>
-    <a href="https://arch-php.000webhostapp.com/">View Demo</a>
+    <a href="https://arch-php.000webhostapp.com/" target="blank">View Demo</a>
   </h4>
 </div>
 
