@@ -21,7 +21,8 @@ use Arch\Core\Router\Route;
 
 class Engine {
    private string $dir_view;
-   private array $data;
+   private string $vPath;
+   public array $data;
    private string $layout;
    private string $js;
    private JSLoader $jsLoader;
@@ -31,22 +32,34 @@ class Engine {
       $this->route = new Route();
       $this->dir_view = $this->setViewDir($dir_view);
       $this->js = dirname($this->dir_view) . DS . 'js' . DS;
-      $this->data = $data;
+      $this->data = $this->setData($data);
       $this->layout = $this->setLayoutDir($layout);
       $this->jsLoader = new JSLoader();
       $this->flashMessages = new FlashMessages();
-
    }
 
+   private function setData(array $data): array {
+      $this->data = $data;
+      $this->setBreadcrumb();
+      return $this->data;
+   }
+   private function setBreadcrumb(): void {
+      $route = new Route();
+      $this->data['breadcrumb'] = [$route->module(), $route->controller(), $route->method()];
+   }
    private function setViewDir(string $dir_view): string {
       $modules = $this->route->module();
       if (defined('ERROR_HANDLER')) {
          $modules = 'Errors';
       }
-      $dir_view = ARCH_APP_MODULES . $modules . DS . DS . 'Views' . DS . $dir_view . '.view.phtml';
+      $dir_view = ARCH_APP_MODULES . $modules . DS . 'Views' . DS . $dir_view . '.view.phtml';
+
       if (!file_exists($dir_view)) {
          throw new \Exception("El directorio de vistas no existe: $dir_view");
       }
+
+      // obten vPath eliminando el archivo de la vista del path
+      $this->vPath = dirname($dir_view);
 
       return $dir_view;
    }
@@ -84,19 +97,26 @@ class Engine {
 
    public function render(): string {
       $this->loadjs();
-
       $view = $this->renderView();
       $layout = $this->renderLayout();
       $html = str_replace('@content', $view, $layout);
       return $html;
    }
 
+   public function import(string $filename): void {
+      $partial = $this->vPath . DS . 'partials' . DS . $filename . '.phtml';
+      if (!file_exists($partial)) {
+         throw new \Exception("El archivo parcial no existe: $partial");
+      }
+      require_once $partial;
+   }
+
    public function avatar(string $name, string $surename): Avatar {
       return new Avatar($name, $surename);
    }
 
-   public function flashMessages(): FlashMessages {
-      return $this->flashMessages;
+   public function alerts(): array {
+      return $this->flashMessages->getMessages();
    }
 
 }

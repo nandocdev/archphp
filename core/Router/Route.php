@@ -45,21 +45,20 @@ class Route {
       return $this->_url;
    }
 
-   private function toCamellCase(string $string, bool $firstLower = false): string {
-      if (strpos($string, '-') == false || strpos($string, '_') == false) {
-         $string = ucfirst($string);
-         return $string;
+   private function toCamelCase(string $string, bool $firstLower = false): string {
+      if (strpos($string, '-') === false && strpos($string, '_') === false) {
+         return $firstLower ? lcfirst($string) : ucfirst($string);
       }
 
-      $parts = preg_split("[-|_]", strtolower($string));
+      $parts = preg_split('/[-_]/', strtolower($string));
 
       $result = "";
       foreach ($parts as $key => $value) {
          if ($firstLower && $key == 0) {
             $result .= $value;
-            continue;
+         } else {
+            $result .= ucfirst($value);
          }
-         $result .= ucfirst($value);
       }
       return $result;
    }
@@ -67,17 +66,17 @@ class Route {
    // getters
    public function module(): string {
       $module = $this->_url[0] ?? APP_DEFAULT_MODULE;
-      $this->_module = $this->toCamellCase($module);
+      $this->_module = $this->toCamelCase($module);
       return $this->_module;
    }
    public function controller() {
       $controller = $this->_url[1] ?? APP_DEFAULT_CONTROLLER;
-      $this->_controller = $this->toCamellCase($controller);
+      $this->_controller = $this->toCamelCase($controller);
       return $this->_controller;
    }
    public function method() {
       $method = $this->_url[2] ?? APP_DEFAULT_ACCTION;
-      $this->_method = $this->toCamellCase($method, true);
+      $this->_method = $this->toCamelCase($method, true);
       return $this->_method;
    }
    public function params() {

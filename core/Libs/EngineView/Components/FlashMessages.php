@@ -18,19 +18,30 @@ class FlashMessages {
    private string $type = 'info';
    private string $icon = 'info';
    private string $title = 'Información';
+   private array $icons = [
+      'info' => 'fa fa-circle-info me-1',
+      'success' => 'fa fa-circle-check me-1',
+      'warning' => 'fa fa-triangle-exclamation me-1',
+      'danger' => 'fa fa-circle-xmark me-1',
+   ];
 
    public function __construct() {
-      $this->messages = $_SESSION['flash_messages'] ?? [];
+      $this->messages = $this->existSession() ? $_SESSION['flash_messages'] : [];
       unset($_SESSION['flash_messages']);
    }
 
-   public function addMessage(string $message, string $type = 'info', string $icon = 'info', string $title = 'Información'): self {
+   private function existSession(): bool {
+      return isset($_SESSION['flash_messages']) && !empty($_SESSION['flash_messages']);
+   }
+
+   public function addMessage(string $message, string $type = 'info', string $title = 'Información'): self {
       $this->messages[] = [
          'message' => $message,
          'type' => $type,
-         'icon' => $icon,
+         'icon' => $this->icons[$type] ?? $this->icons['info'],
          'title' => $title
       ];
+      $_SESSION['flash_messages'] = $this->messages;
       return $this;
    }
 

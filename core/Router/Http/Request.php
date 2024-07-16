@@ -117,12 +117,15 @@ class Request {
       return $body;
    }
 
-   private static function setParams() {
-      // evalua la variable global GET, elimina todos los elemenetos que contengan como clave url
-      if (isset($_GET['url'])) {
-         unset($_GET['url']);
+   private static function setParams(): array {
+      $getArray = $_GET;
+      $get = [];
+      foreach ($getArray as $key => $value) {
+         if (!is_array($value)) {
+            $get[$key] = self::cleanInput($value);
+         }
       }
-      return $_GET;
+      return $get;
    }
 
    public function addParams(array $params): void {
@@ -183,9 +186,9 @@ class Request {
    private static function cleanInput(string $input): string {
       $search = array(
          '@<script[^>]*?>.*?</script>@si',
-         '@<[\ /\!]*?[^<>]*?>@si',
-         '@<style[^>]*?>.*?</style>@siU',
-         '@
+'@<[\ /\!]*?[^<>]*?>@si',
+   '@<style[^>]*?>.*?</style>@siU',
+      '@
       <![\s\S]*?--[ \t\n\r]*>@',
          '@SELECT\s+.*?\s+FROM\s+.*?\s+WHERE\s+.*?\s+LIKE\s+.*?@si',
       );

@@ -143,9 +143,9 @@ class Response {
       return $this;
    }
 
-   public function flash(string $type = "success", string $message = "", string $title = ""): self {
+   public function flash(string $type = 'info', string $message, string $title = 'Información'): self {
       $flash = new FlashMessages();
-      $flash->addMessage($message, $type, $type, $title);
+      $flash->addMessage($message, $type, $title);
       return $this;
    }
 
